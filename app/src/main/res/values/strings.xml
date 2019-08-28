@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Belajar Kriptografi</string>
+    <string name="title_activity_layar_menu1">LayarMenu1</string>
+    <string name="bantuanp1">
+        Aplikasi belajar kriptografi ini memiliki beberapa fitur dimana
+        pada halaman fitur-fitur ini terdapat halaman bantuan yang berisi penjelasan
+        mengenai cara menggunakan fitur tersebut. Berikut ini merupakan gambar
+        mengenai cara untuk mengakses bantuan tertentu yang terdapat di dalam
+        salah satu fitur aplikasi ini:
+    </string>
+    <string name="bantuanp2">
+        Selain menyediakan halaman bantuan mengenai cara pengunaan fitur,
+        aplikasi belajar kriptografi juga menyediakan
+        bantuan secara online. Bantuan secara online ini dapat digunakan oleh
+        pengguna dengan cara menghubungi langsung Customer Service aplikasi
+        ini ke email:
+    </string>
+    <string name="bantuanp3">
+        cskalkkrip@aol.com
+    </string>
+
+    <string name="mengenai1">
+        Copyright 2019 © Hendy - All Rights Reserved
+    </string>
+    <string name="mengenai2">
+        Dilarang keras menyalin, memodifikasi, ataupun menjual aplikasi ini secara tidak sah, melalui media apa pun.
+    </string>
+    <string name="mengenai3">
+        Dengan memiliki, memasang, ataupun menggunakan aplikasi ini, anda setuju dengan ketentuan di atas.
+    </string>
+    <string name="mengenai4">
+        Ditulis oleh Hendy \u003Chendyalgorithm@programmer.net\u003E, Agustus 2019
+    </string>
+    <string name="mengenai6">
+        Lisensi Terkait yang Digunakan untuk Pengembangan:
+    </string>
+    <string name="mengenai7">
+        Google Icons
+    </string>
+    <string name="mengenaiApache">
+        Apache License V 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+    </string>
+    <string name="mengenai8">
+        Image Cropper (Edmodo)
+    </string>
+    <string name="mengenai9">Originally forked from edmodo/cropper.
+        Copyright 2016, Arthur Teplitzki, 2013, Edmodo, Inc.
+        Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
+    </string>
+    <string name="mengenai10">
+        Tess-two (Tesseract-OCR)
+    </string>
+    <string name="mengenai11">
+        Copyright 2011 Robert Theis.
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at:
+    </string>
+    <string name="mengenaiEnd">
+        Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+    </string>
+    <string name="bmenu11">Untuk mengkonversi karakter atau text menjadi ASCII, dibutuhkan masukan berupa susunan beberapa karakter atau sebuah karakter untuk dapat dikonversi menjadi kode ASCII. Untuk melakukan konversi menjadi kode ASCII, pengguna dapat menekan tombol yang telah disediakan pada halaman fitur ini. Berikut merupakan contoh masukan dan cara menggunakan fitur ini untuk melakukan konversi ke kode ASCII.</string>
+    <string name="bmenu12">Setelah pengguna melakukan konversi ke kode ASCII, maka akan ditampilkan hasilnya pada kolom yang telah disediakan. Pengguna juga dapat melihat langkah-langkah untuk mengkonversinya pada tombol yang telah disediakan. Berikut ini merupakan gambar contoh hasil konversi ke kode ASCII.</string>
+    <string name="bmenu13">Untuk melakukan konversi dari rentetan kode ASCII atau sebuah kode ASCII, diperlukan masukan terlebih dahulu pada kolom yang telah disediakan. Rentetan kode ASCII ini perlu ditulis dengan bilangan desimal yang menyatakan kode ASCII tersebut dan menggunakan tanda koma (,) sebagai pemisah kode ASCII (kolom hanya membaca bilangan desimal dan koma). Pengguna dapat mengkonversi rentetan kode ASCII atau sebuah kode ASCII dengan menekan tombol yang telah disediakan. Berikut ini merupakan contoh penggunaanya.</string>
+    <string name="bmenu14">Setelah melakukan konversi dari kode ASCII ke karakter pengguna dapat melihat hasilnya pada kolom yang telah disediakan. Pengguna juga dapat melihat langkah-langkah konversi dari kode ASCII ke karakter tersebut dengan menekan tombol yang telah disediakan. Berikut ini merupakan gambar penggunaanya.</string>
+    <string name="bmenu21">Konversi dari bilangan desimal ke bilangan biner dapat dilakukan dengan cara memasukan bilangan (angka) desimal pada kolom yang telah disediakan (kolom hanya membaca bilangan desimal). Setelah memasukan bilangan desimal, pengguna dapat mengkonversinya ke bilangan biner menggunakan tombol yang telah disediakan pada halaman fitur ini. Berikut ini merupakan contoh cara memakai fitur ini.</string>
+    <string name="bmenu22">Setelah mengkonversi bilangan desimal tersebut, pengguna dapat melihat hasilnya berupa rentetan bilangan biner yang terdapat pada salah satu kolom fitur ini. Selain itu, pengguna juga dapat melihat langkah-langkah konversi dari bilangan biner ke desimal dengan cara menekan tombol yang telah disediakan setelah pengguna melakukan konversi. Berikut ini merupakan gambar hasil konversi ke biner.</string>
+    <string name="bmenu23">Pengguna juga dapat mengkonversi bilangan biner ke bilangan desimal dengan cara memasukan rentetan bilangan biner ke kolom yang telah disediakan (kolom hanya membaca bilangan 1 dan 0). Setelah memasukan bilangan biner, pengguna dapat mengkonversi bilangan biner tersebut dengan menekan tombol yang disediakan. Berikut ini merupakan contoh penggunaanya.</string>
+    <string name="bmenu24">Pengguna dapat melihat hasil konversinya di kolom yang telah disediakan dan dapat melihat langkah-langkah untuk mengkonversi bilangan biner tersebut dengan cara menekan tombol yang telah disediakan. Berikut ini merupakan gambaranya.</string>
+    <string name="bmenu31">Ketika ingin melakukan enkripsi, pengguna harus memasukan text yang dienkripsi beserta key yang dapat terdiri dari sebuah karakter atau text. Pengguna dapat melakukan enkripsi dengan menekan tombol yang disediakan untuk mengenkripsi text yang dimasukan menggunakan key yang dimasukan. Berikut ini merupakan contoh penggunaanya.</string>
+    <string name="bmenu32">Setelah pengguna mengenkripsi text tersebut, aplikasi ‘Belajar Kriptografi’ akan menampilkan hasilnya pada kolom yang telah disediakan. Pengguna juga dapat melihat langkah-langkah enkripsi tersebut dilakukan pada tombol yang telah disediakan. Berikut ini merupakan gambaranya.</string>
+    <string name="bmenu33">Pengguna dapat melakukan dekripsi cipher text dengan cara memasukan text yang merupakan hasil enkripsi dengan metode XoR beserta key yang digunakan untuk melakukan enkripsi tersebut. Setelah memasukan kedua hal tersebut, pengguna dapat melakukan dekripsi text dengan menekan tombol yang telah disediakan. Berikut ini merupakan contoh penggunaanya.</string>
+    <string name="bmenu34">Setelah pengguna melakukan dekripsi cipher text, aplikasi akan menampilkan hasilnya pada kolom yang telah disediakan di dalam fitur ini. Pengguna juga dapat melihat langkah-langkah untuk melakukan dekripsi pada tombol yang telah disediakan. Berikut ini merupakan gambaranya.</string>
+    <string name="bmenu41">Fitur ini merupakan fitur yang mirip dengan fitur enkripsi text, tetapi perbedaan yang mencolok adalah jenis masukan yang diperlukan untuk melakukan enkripsi. Ketika pengguna ingin mengenkripsi plain text, pengguna perlu memasukan plain text dalam bentuk rentetan kode ASCII (bilangan desimal dan dipisah dengan tanda koma ‘,’) ke dalam kolom yang telah disediakan beserta key dalam bentuk rentetan kode ASCII. Setelah itu, pengguna dapat melakukan enkripsi menggunakan tombol yang telah disediakan. Berikut ini merupakan contoh penggunaan dari fitur ini.</string>
+    <string name="bmenu42">Setelah melakukan enkripsi terhadap rentetan kode ASCII tersebut, pengguna dapat melihat hasil di dalam kolom yang telah disediakan dan langkah-langkah enkripsi kode dengan detail pada tombol yang disediakan oleh aplikasi ini. Berikut ini merupakan contoh penggunaanya.</string>
+    <string name="bmenu43">Pengguna juga dapat mendekripsi rentetan kode ASCII yang dihasilkan dari enkripsi menggunakan key yang sama. Setelah memasukan hasil enkripsi dan key, pengguna dapat melakukan dekripsi dengan menekan tombol yang telah disediakan. Berikut ini merupakan contoh penggunaan ketika melakukan dekripsi.</string>
+    <string name="bmenu44">Aplikasi ‘Belajar Kriptografi’ akan menampilkan hasil dekripsi pada kolom yang telah disediakan. Pengguna juga dapat melihat langkah-langkah yang detail untuk dapat mendekripsi dengan menekan tombol yang telah disediakan. Berikut ini  merupakan gambaranya.</string>
+    <string name="bmenu51">RSA merupakan sebuah algoritma enkripsi yang berjenis asinkron (kunci enkripsi dan dekripsi berbeda). Ketika pengguna ingin mengenkripsi text menggunakan RSA, pengguna perlu memasukan text beserta 2 bilangan prima pada kolom yang telah disediakan. Setelah memasukan hal-hal tersebut, pengguna dapat melakukan enkripsi dengan menekan tombol yang telah disediakan. Berikut ini merupakan gambar penggunakan enkripsi RSA ini.</string>
+    <string name="bmenu52">Setelah melakukan enkripsi, aplikasi ini akan menghasilkan keluaran berupa deretan kode hasil enkripsi text yang telah diubah ke kode ASCII. Enkripsi ini menggunakan algoritma RSA dan menghasilkan deretan kode bilangan desimal (bukan karakter) dikarenakan algoritma RSA memang dikhususkan untuk mengenkripsi bilangan desimal, tetapi algoritma ini meyesuaikan agar dapat mengenkripsi teks. Pengguna dapat melihat langkah-langkah enkripsi RSA dengan menekan tombol yang telah disediakan. Berikut ini merupakan gambaranya.</string>
+    <string name="bmenu53">Fitur ini juga dapat mendekripsi deretan kode yang telah dihasilkan oleh enkripsi RSA. Pengguna dapat memasukan deretan kode ke dalam aplikasi ini, serta memasukan bilangan N dan private key yang didapatkan dari hasil enkripsi RSA. Rentetan kode dimasukan menggunakan bilangan desimal dan tanda koma ‘,’ sebagai pemisah kode. Setelah pengguna memasukan hal-hal tersebut, pengguna dapat melakukan dekripsi RSA dengan cara menekan tombol yang telah disediakan. Berikut ini merupakan contoh masukan dan penggunaanya.</string>
+    <string name="bmenu54">Aplikasi ini akan menghasilkan text hasil dekripsi RSA pada kolom yang telah disediakan setelah pengguna telah menekan tombol untuk mendekripsi rentetan kode menggunakan bilangan N dan private key yang telah disediakan. Pengguna juga dapat melihat langkah-langkah untuk melakukan dekripsi kodenya pada tombol yang telah disesdiakan. Berikut ini adalah gambaranya.</string>
+    <string name="bmenu61">Fitur ini sama dengan fitur XOR - Text yang terdapat pada menu ke-3 pada aplikasi ‘Belajar Kriptografi’. Perbedaan yang mencolok pada fitur ini adalah terdapat scanner text yang dapat mendeteksi text apabila telah difoto dan dilakukan crop. Berikut ini merupakan cara mengakses fitur scanner.</string>
+    <string name="bmenu62">Setelah menekan tombol untuk scan text, pengguna dapat melakukan foto telebih dahulu. Foto dilakukan dengan pencahayaan yang cukup dan dengan gambar yang jelas agar text yang dihasilkan dapat akurat. Berikut ini merupakan gambar cara melakukan foto atau scan text.</string>
+    <string name="bmenu63">Setelah melakukan scan, agar mengurangi gangguan dan dapat meningkatkan hasil, pengguna disarankan untuk melakukan edit terhadap hasil scan. Pengguna dapat melakukan crop agar meningkatkan focus terhadap text yang ingin discan dan dapat juga merotasi atau membalik posisi foto (opsional). Berikut ini adalah penggunaan fitur edit pada hasil scan.</string>
+    <string name="bmenu64">Setelah melakukan edit dan menekan tombol ‘CROP’, aplikasi akan menampilkan hasilnya pada kolom yang telah sediakan. Setelah itu, pengguna perlu memasukan key (dapat dengan cara scan atau input biasa). Berikut ini merupakan hasil dan gambaranya.</string>
+    <string name="bmenu65">Karena untuk penggunaan fitur pada halaman ini sama dengan fitur XOR – Text, pengguna dapat melihat secara khusus penggunaan fitur XOR dengan menekan tombol yang terdapat dibawah ini.</string>
+</resources>
