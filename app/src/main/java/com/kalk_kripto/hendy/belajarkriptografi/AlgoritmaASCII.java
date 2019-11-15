@@ -7,7 +7,7 @@ public class AlgoritmaASCII {
 
     public AlgoritmaASCII(String temp, boolean stat){
         this.penj="";
-        if(stat==true){
+        if(stat){
             Charset characterSet = Charset.forName("US-ASCII");
             String result="";
             byte[] bytes = temp.getBytes(characterSet);
@@ -26,7 +26,7 @@ public class AlgoritmaASCII {
             this.penj+="Hasil:"+"\n";
             this.penj+=result+"\n";
             this.out=result;
-        }else if(stat==false){
+        }else if(!stat){
             try{
                 String result="";
                 int result1;

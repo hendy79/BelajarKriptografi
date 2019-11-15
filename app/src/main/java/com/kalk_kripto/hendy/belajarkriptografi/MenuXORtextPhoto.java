@@ -1,6 +1,7 @@
 package com.kalk_kripto.hendy.belajarkriptografi;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
@@ -56,7 +57,19 @@ public class MenuXORtextPhoto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layar_menu6);
-        setTitle("Foto - XOR");
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        TextView title = toolbar.findViewById(R.id.toolbar_title);
+        Button backbut = toolbar.findViewById(R.id.back);
+        title.setText("Foto - XOR");
+        backbut.setVisibility(View.VISIBLE);
+        backbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         AirBanner airBanner = new AirBanner(this);
         airBanner.setAdListener(new AirBannerListener() {
             @Override

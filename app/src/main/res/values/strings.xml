@@ -16,7 +16,7 @@
         ini ke email:
     </string>
     <string name="bantuanp3">
-        cskalkkrip@aol.com
+        b_k@asia.com
     </string>
 
     <string name="mengenai1">
@@ -32,7 +32,7 @@
         Ditulis oleh Hendy \u003Chendyalgorithm@programmer.net\u003E, Agustus 2019
     </string>
     <string name="mengenai6">
-        Lisensi Terkait yang Digunakan untuk Pengembangan:
+        Lisensi Terkait yang Digunakan untuk Pengembangan
     </string>
     <string name="mengenai7">
         Google Icons
@@ -55,6 +55,21 @@
         Licensed under the Apache License, Version 2.0 (the "License");
         you may not use this file except in compliance with the License.
         You may obtain a copy of the License at:
+    </string>
+    <string name="mengenai12">
+        National Park Font Family
+    </string>
+    <string name="mengenai13">
+        The Design Outside (DO) Studio Presents
+    </string>
+    <string name="mengenai14">
+        N A T I O N A L P A R K
+    </string>
+    <string name="mengenai15">
+        A typeface designed to mimic the national park service signs that are carved using a router bit.
+    </string>
+    <string name="mengenai16">
+        National Park font family is licensed under the SIL Open Font Licence (OFL). (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi\u0026id=OFL)
     </string>
     <string name="mengenaiEnd">
         Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
@@ -84,4 +99,28 @@
     <string name="bmenu63">Setelah melakukan scan, agar mengurangi gangguan dan dapat meningkatkan hasil, pengguna disarankan untuk melakukan edit terhadap hasil scan. Pengguna dapat melakukan crop agar meningkatkan focus terhadap text yang ingin discan dan dapat juga merotasi atau membalik posisi foto (opsional). Berikut ini adalah penggunaan fitur edit pada hasil scan.</string>
     <string name="bmenu64">Setelah melakukan edit dan menekan tombol ‘CROP’, aplikasi akan menampilkan hasilnya pada kolom yang telah sediakan. Setelah itu, pengguna perlu memasukan key (dapat dengan cara scan atau input biasa). Berikut ini merupakan hasil dan gambaranya.</string>
     <string name="bmenu65">Karena untuk penggunaan fitur pada halaman ini sama dengan fitur XOR – Text, pengguna dapat melihat secara khusus penggunaan fitur XOR dengan menekan tombol yang terdapat dibawah ini.</string>
+    <string name="bmenu71">
+Ketika ingin melakukan enkripsi, pengguna harus memasukan plain text (hanya berisi huruf alfabet) yang akan dienkripsi, beserta angka yang digunakan untuk menggeser text tersebut agar dapat dienkripsi. Pengguna dapat melakukan enkripsi dengan menekan tombol yang disediakan untuk mengenkripsi text yang dimasukan menggunakan angka peregeseran yang dimasukan. Berikut ini merupakan contoh penggunaanya.
+    </string>
+    <string name="bmenu72">
+Setelah pengguna mengenkripsi text tersebut, aplikasi ‘Belajar Kriptografi’ akan menampilkan hasilnya pada kolom yang terdapat di tombol yang telah disediakan. Pengguna juga dapat melihat langkah-langkah enkripsi tersebut dilakukan pada tombol yang telah disediakan. Berikut ini merupakan gambaranya.
+    </string>
+    <string name="bmenu73">
+Pengguna dapat melakukan dekripsi cipher text dengan cara memasukan text yang merupakan hasil enkripsi dengan metode caesar beserta angka jumlah pergeseran yang digunakan untuk melakukan enkripsi tersebut. Setelah memasukan kedua hal tersebut, pengguna dapat melakukan dekripsi text dengan menekan tombol yang telah disediakan. Berikut ini merupakan contoh penggunaanya.
+    </string>
+    <string name="bmenu74">
+Setelah pengguna melakukan dekripsi cipher text, aplikasi akan menampilkan hasilnya pada kolom yang telah disediakan di dalam fitur ini. Pengguna juga dapat melihat langkah-langkah untuk melakukan dekripsi pada tombol yang telah disediakan. Berikut ini merupakan gambaranya.
+    </string>
+    <string name="bmenu81">
+Ketika ingin melakukan enkripsi, pengguna harus memasukan plain text (hanya berisi huruf alfabet) dan key (terdiri dari satu kata dan hanya berisi alfabet) yang akan digunakan untuk melakukan enkripsi menggunakan algoritma vigenere. Pengguna dapat melakukan enkripsi dengan menekan tombol yang disediakan untuk mengenkripsi text yang dimasukan. Berikut ini merupakan contoh penggunaanya.
+    </string>
+    <string name="bmenu82">
+Setelah pengguna mengenkripsi text tersebut, aplikasi ini akan menampilkan hasilnya pada kolom yang terdapat di tombol yang telah disediakan. Pengguna juga dapat melihat langkah-langkah enkripsi tersebut dilakukan pada tombol yang telah disediakan. Berikut ini merupakan gambaranya.
+    </string>
+    <string name="bmenu83">
+Pengguna dapat melakukan dekripsi cipher text dengan cara memasukan text yang merupakan hasil enkripsi dengan metode vigenere beserta key (terdiri dari satu kata dan hanya berisi alfabet) yang digunakan untuk melakukan enkripsi tersebut. Setelah memasukan kedua hal tersebut, pengguna dapat melakukan dekripsi text dengan menekan tombol yang telah disediakan. Berikut ini merupakan contoh penggunaanya.
+    </string>
+    <string name="bmenu84">
+Setelah pengguna melakukan dekripsi cipher text, aplikasi akan menampilkan hasilnya pada kolom yang telah disediakan di dalam fitur ini. Pengguna juga dapat melihat langkah-langkah untuk melakukan dekripsi pada tombol yang telah disediakan. Berikut ini merupakan gambaranya.
+    </string>
 </resources>

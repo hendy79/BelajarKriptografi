@@ -2,6 +2,8 @@ package com.kalk_kripto.hendy.belajarkriptografi;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -26,7 +28,19 @@ public class MenuXORascii extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layar_menu4);
-        setTitle("Konverter XOR - ASCII");
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        TextView title = toolbar.findViewById(R.id.toolbar_title);
+        Button backbut = toolbar.findViewById(R.id.back);
+        title.setText("Konverter XOR - ASCII");
+        backbut.setVisibility(View.VISIBLE);
+        backbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         AirBanner airBanner = new AirBanner(this);
         airBanner.setAdListener(new AirBannerListener() {
             @Override

@@ -1,11 +1,16 @@
 package com.kalk_kripto.hendy.belajarkriptografi;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.air.sdk.addons.airx.AirBannerListener;
 import com.air.sdk.addons.airx.AirFullscreenListener;
@@ -15,11 +20,25 @@ import com.air.sdk.injector.AirFullscreen;
 public class Penjelasan extends AppCompatActivity {
     TextView tv1;
     AirFullscreen airFullscreen;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_penjelasan);
-        setTitle("Penjelasan");
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        TextView title = toolbar.findViewById(R.id.toolbar_title);
+        Button backbut = toolbar.findViewById(R.id.back);
+        title.setText("Penjelasan");
+        backbut.setVisibility(View.VISIBLE);
+        backbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
         tv1=(TextView) findViewById(R.id.penjtv);
         Intent tangkapdt = getIntent();
         tv1.setText(tangkapdt.getStringExtra("pJ"));
@@ -110,4 +129,5 @@ public class Penjelasan extends AppCompatActivity {
         airFullscreen.loadAd();
         airFullscreen.showAd();
     }
+
 }

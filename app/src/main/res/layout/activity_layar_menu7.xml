@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plain Text"
+            android:layout_margin="16dp"
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_heavy"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input/Output Plain Text"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/etca1"
+            android:fontFamily="@font/national_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cipher Text"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_heavy"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input/Output Cipher Text"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/etca2"
+            android:fontFamily="@font/national_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan Jumlah Pergeseran"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_heavy"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Angka Pergeseran"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/etca3"
+            android:fontFamily="@font/national_regular"/>
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/fontC2"
+            android:text="Encrypt dengan Caesar"
+            android:background="@drawable/backgr"
+            android:id="@+id/cae1"
+            android:onClick="cae1"
+            android:fontFamily="@font/national_heavy"/>
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/fontC2"
+            android:text="Decrypt dengan Caesar"
+            android:background="@drawable/backgr"
+            android:id="@+id/cae2"
+            android:onClick="cae2"
+            android:fontFamily="@font/national_heavy"/>
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/fontC2"
+            android:text="Perlihatkan Caranya"
+            android:background="@drawable/backgr"
+            android:id="@+id/penjx"
+            android:onClick="penjx"
+            android:visibility="gone"
+            android:fontFamily="@font/national_heavy"/>
+        <com.air.sdk.injector.AirBanner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bannerm7"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

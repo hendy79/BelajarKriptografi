@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<ScrollView
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,7 +24,8 @@
         android:layout_margin="16dp"
         android:textColor="@color/fontC1"
         android:textSize="16sp"
-        android:id="@+id/b1tv1"/>
+        android:id="@+id/b1tv1"
+        android:fontFamily="@font/national_regular"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +34,8 @@
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
-        android:id="@+id/b1im1"/>
+        android:id="@+id/b1im1"
+        android:layout_gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +44,8 @@
         android:layout_marginLeft="16dp"
         android:textColor="@color/fontC1"
         android:textSize="16sp"
-        android:id="@+id/b1tv2"/>
+        android:id="@+id/b1tv2"
+        android:fontFamily="@font/national_regular"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,7 +54,8 @@
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
-        android:id="@+id/b1im2"/>
+        android:id="@+id/b1im2"
+        android:layout_gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +64,8 @@
         android:layout_marginLeft="16dp"
         android:textColor="@color/fontC1"
         android:textSize="16sp"
-        android:id="@+id/b1tv3"/>
+        android:id="@+id/b1tv3"
+        android:fontFamily="@font/national_regular"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,7 +74,8 @@
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
-        android:id="@+id/b1im3"/>
+        android:id="@+id/b1im3"
+        android:layout_gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,7 +84,8 @@
         android:layout_marginLeft="16dp"
         android:textColor="@color/fontC1"
         android:textSize="16sp"
-        android:id="@+id/b1tv4"/>
+        android:id="@+id/b1tv4"
+        android:fontFamily="@font/national_regular"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -79,7 +94,8 @@
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
-        android:id="@+id/b1im4"/>
+        android:id="@+id/b1im4"
+        android:layout_gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,7 +105,8 @@
         android:textColor="@color/fontC1"
         android:textSize="16sp"
         android:visibility="gone"
-        android:id="@+id/b1tv5"/>
+        android:id="@+id/b1tv5"
+        android:fontFamily="@font/national_regular"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,6 +116,7 @@
         android:textColor="@color/fontC2"
         android:textSize="16sp"
         android:text="Cara Memakai Menu 'XOR - Text'"
+        android:fontFamily="@font/national_heavy"
         android:onClick="b1bt"
         android:textAllCaps="false"
         android:visibility="gone"
@@ -111,3 +129,4 @@
         android:layout_gravity="center"/>
 </LinearLayout>
 </ScrollView>
+</LinearLayout>

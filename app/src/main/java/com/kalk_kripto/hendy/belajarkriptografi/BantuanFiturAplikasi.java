@@ -1,6 +1,7 @@
 package com.kalk_kripto.hendy.belajarkriptografi;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +21,19 @@ public class BantuanFiturAplikasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bantuan1);
-        setTitle("Bantuan Fitur Aplikasi");
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        TextView title = toolbar.findViewById(R.id.toolbar_title);
+        Button backbut = toolbar.findViewById(R.id.back);
+        title.setText("Bantuan Fitur Aplikasi");
+        backbut.setVisibility(View.VISIBLE);
+        backbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         AirBanner airBanner = new AirBanner(this);
         airBanner.setAdListener(new AirBannerListener() {
             @Override
@@ -174,6 +187,42 @@ public class BantuanFiturAplikasi extends AppCompatActivity {
                 img.setImageResource(R.drawable.menu64);
                 Button bt = findViewById(R.id.b1bt);
                 bt.setVisibility(View.VISIBLE);
+                break;
+            case 7:
+                tv = findViewById(R.id.b1tv1);
+                tv.setText(R.string.bmenu71);
+                tv = findViewById(R.id.b1tv2);
+                tv.setText(R.string.bmenu72);
+                tv = findViewById(R.id.b1tv3);
+                tv.setText(R.string.bmenu73);
+                tv = findViewById(R.id.b1tv4);
+                tv.setText(R.string.bmenu74);
+                img = findViewById(R.id.b1im1);
+                img.setImageResource(R.drawable.menu71);
+                img = findViewById(R.id.b1im2);
+                img.setImageResource(R.drawable.menu72);
+                img = findViewById(R.id.b1im3);
+                img.setImageResource(R.drawable.menu73);
+                img = findViewById(R.id.b1im4);
+                img.setImageResource(R.drawable.menu74);
+                break;
+            case 8:
+                tv = findViewById(R.id.b1tv1);
+                tv.setText(R.string.bmenu81);
+                tv = findViewById(R.id.b1tv2);
+                tv.setText(R.string.bmenu82);
+                tv = findViewById(R.id.b1tv3);
+                tv.setText(R.string.bmenu83);
+                tv = findViewById(R.id.b1tv4);
+                tv.setText(R.string.bmenu84);
+                img = findViewById(R.id.b1im1);
+                img.setImageResource(R.drawable.menu81);
+                img = findViewById(R.id.b1im2);
+                img.setImageResource(R.drawable.menu82);
+                img = findViewById(R.id.b1im3);
+                img.setImageResource(R.drawable.menu83);
+                img = findViewById(R.id.b1im4);
+                img.setImageResource(R.drawable.menu84);
                 break;
             default:
                 Toast.makeText(this,"Halaman Kosong!",Toast.LENGTH_SHORT).show();

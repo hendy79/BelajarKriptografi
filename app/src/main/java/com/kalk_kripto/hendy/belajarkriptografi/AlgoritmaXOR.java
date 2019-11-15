@@ -14,7 +14,7 @@ public class AlgoritmaXOR {
         String tmp="";
         String result="",result1="";
         String res = "";
-        if(stat==true){
+        if(stat){
             this.penj+="Konversi Plain Text ke Kode Ascii (Biner):\n";
             String[] StrBin=new String[100],KeyBin=new String[100];
             for(int h=0;h<charStr.length;h++){
@@ -77,7 +77,7 @@ public class AlgoritmaXOR {
             this.penj+="Hasil Enkripsi Setelah digabung menjadi Cipher Text:\n";
             this.out=encrypted;
             this.penj+=encrypted+"\n";
-        }else if(stat==false){
+        }else if(!stat){
             this.penj+="Konversi Cipher Text ke Kode Ascii (Biner):\n";
             String[] StrBin=new String[100],KeyBin=new String[100];
             for(int h=0;h<charStr.length;h++){

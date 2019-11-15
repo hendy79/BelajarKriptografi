@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -15,7 +16,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.air.sdk.addons.airx.AirBannerListener;
 import com.air.sdk.addons.airx.AirFullscreenListener;
@@ -29,7 +32,11 @@ public class Pilihan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pilihan);
-        setTitle("Beranda");
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        TextView title = toolbar.findViewById(R.id.toolbar_title);
+        title.setText("Beranda");
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
         }
@@ -204,4 +211,12 @@ public class Pilihan extends AppCompatActivity {
         airFullscreen.loadAd();
         airFullscreen.showAd();
         startActivity(new Intent(Pilihan.this, MenuXORtextPhoto.class));}
+    public void menu7(View view) {
+        airFullscreen.loadAd();
+        airFullscreen.showAd();
+        startActivity(new Intent(Pilihan.this, MenuCaesar.class));}
+    public void menu8(View view) {
+        airFullscreen.loadAd();
+        airFullscreen.showAd();
+        startActivity(new Intent(Pilihan.this, MenuVigenere.class));}
 }

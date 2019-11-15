@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -13,11 +21,11 @@
         android:text="Menu utama 'Belajar Kriptografi'"
         android:textColor="@color/fontC2"
         android:gravity="center"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:background="@color/colorPrimary"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:fontFamily="@font/national_heavy"/>
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -36,7 +44,8 @@
         android:drawableTop="@drawable/ic_ascii_converter"
         android:background="@drawable/backgr"
         android:onClick="menu1"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="@font/national_heavy"/>
     <Button android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -51,10 +60,10 @@
         android:background="@drawable/backgr"
         android:onClick="menu2"
         android:drawableTop="@drawable/ic_binary_converter"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="@font/national_heavy"/>
     </LinearLayout>
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -73,7 +82,8 @@
         android:text="XOR - Text"
         android:background="@drawable/backgr"
         android:onClick="menu3"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="@font/national_heavy"/>
     <Button android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -88,10 +98,48 @@
         android:text="XOR - ASCII"
         android:background="@drawable/backgr"
         android:onClick="menu4"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="@font/national_heavy"/>
     </LinearLayout>
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:drawableTop="@drawable/ic_caesar"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/fontC2"
+            android:text="Caesar Cipher"
+            android:background="@drawable/backgr"
+            android:onClick="menu7"
+            android:padding="8dp"
+            android:fontFamily="@font/national_heavy"/>
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:drawableTop="@drawable/ic_vigenere"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/fontC2"
+            android:text="Vigenere Cipher"
+            android:background="@drawable/backgr"
+            android:onClick="menu8"
+            android:padding="8dp"
+            android:fontFamily="@font/national_heavy"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -110,7 +158,8 @@
         android:text="Enkripsi RSA (Async)"
         android:background="@drawable/backgr"
         android:onClick="menu5"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="@font/national_heavy"/>
     <Button android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -125,7 +174,8 @@
         android:text="XOR - Text (Scanner)"
         android:background="@drawable/backgr"
         android:onClick="menu6"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="@font/national_heavy"/>
     </LinearLayout>
     <com.air.sdk.injector.AirBanner
         android:layout_width="wrap_content"
@@ -134,3 +184,4 @@
         android:layout_gravity="center"/>
 </LinearLayout>
 </ScrollView>
+</LinearLayout>

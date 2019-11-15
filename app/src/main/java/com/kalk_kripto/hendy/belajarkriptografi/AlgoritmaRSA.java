@@ -29,6 +29,7 @@ public class AlgoritmaRSA {
                 ix++;
             }
             this.penj+="Hasil Dekripsi didapat dari hasil setiap kode ascii karakter dipangkatkan dengan Private Key kemudian di Modulus dengan N\n\n";
+            this.penj+="->Notasinya adalah C^d mod N=P; dimana C adalah Cipher Text, d adalah Private Key, N adalah hasil perkalian 2 Bilangan Ganjil, dan P adalah Plain Text<-\n";
             this.out = decrypt(c);
             this.penj+="\nHasil Dekripsi dalam bentuk Teks = " + this.out+"\n";
         }catch(NumberFormatException exc){
@@ -59,6 +60,7 @@ public class AlgoritmaRSA {
         String resEnc = builder.toString();
 
         this.penj+="\nHasil Enkripsi didapat dari hasil setiap kode ascii karakter dipangkatkan dengan Public Key kemudian di Modulus dengan N\n";
+        this.penj+="->Notasinya adalah P^e mod N=C; dimana P adalah Plain Text, e adalah Public Key, N adalah hasil perkalian 2 Bilangan Ganjil, dan C adalah Cipher Text<-\n";
         this.penj+="\nHasil Enkripsi dalam Kode ASCII:\n";
         for(int xyz=0;xyz<c.length;xyz++){
             this.penj+=c[xyz];
@@ -89,7 +91,8 @@ public class AlgoritmaRSA {
             }
         }
         //e should be in the range 1-z
-        this.penj+="Public Key, didapat dari nilai Totient ("+z+") dimodulus dengan Public Key itu Sendiri secara Berulang kali dari angka 2 sampai Totient\n";
+        this.penj+="Public Key (e), didapat dari bilangan prima yang bukan merupakan faktor dari Totient ("+z+")\n";
+        this.penj+="->Karena bilangan "+z+" tidak dapat dibagi habis dengan "+e+", maka "+e+" bukan faktor dari "+z+"<-\n";
         this.penj+="Nilai Public Key adalah "+e+"\n\n";
         // calculate d
         for (i = 0; i <= 9; i++) {
@@ -100,7 +103,8 @@ public class AlgoritmaRSA {
                 break;
             }
         }
-        this.penj+="Private Key, didapat dari nilai x (x adalah 1 + iterasi perulangan dikali Totient ("+z+")) yang memiliki salah satu faktor bernilai Public Key ("+e+")\n";
+        this.penj+="Private Key (d), didapat dari nilai Public Key ("+e+") dikalikan Private Key yang dicari dan dimodulus dengan ("+z+") menghasilkan angka 1\n";
+        this.penj+="->Notasinya adalah "+e+"*d mod "+z+" = 1 (d adalah variabel yang mengartikan Private Key)<-\n";
         this.penj+="Nilai Private Key adalah "+d+"\n\n";
     }
     public boolean CheckBesar(int check){

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical" >
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -13,8 +21,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:textSize="25sp"
-            android:text="Bantuan Penggunaan Aplikasi:"
-            android:textColor="@color/fontC1"/>
+            android:text="Bantuan Penggunaan Aplikasi"
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_heavy"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,7 +32,8 @@
             android:layout_marginBottom="16dp"
             android:textSize="18sp"
             android:text="@string/bantuanp1"
-            android:textColor="@color/fontC1"/>
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_regular"/>
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,7 +50,8 @@
             android:layout_marginBottom="8dp"
             android:textSize="18sp"
             android:text="@string/bantuanp2"
-            android:textColor="@color/fontC1"/>
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_regular"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,6 +61,8 @@
             android:textSize="22sp"
             android:textIsSelectable="true"
             android:text="@string/bantuanp3"
-            android:textColor="@color/fontC1"/>
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_regular"/>
     </LinearLayout>
 </ScrollView>
+</LinearLayout>

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical" >
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -14,7 +22,9 @@
             android:layout_height="wrap_content"
             android:text="Plain Text"
             android:layout_margin="16dp"
-            android:textColor="@color/fontC1"/>
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_heavy"
+            android:textSize="20sp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +32,8 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:id="@+id/etxor1"/>
+            android:id="@+id/etxor1"
+            android:fontFamily="@font/national_regular"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +41,9 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:textColor="@color/fontC1"/>
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_heavy"
+            android:textSize="20sp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +51,8 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:id="@+id/etxor2"/>
+            android:id="@+id/etxor2"
+            android:fontFamily="@font/national_regular"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,15 +60,18 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:textColor="@color/fontC1"/>
+            android:textColor="@color/fontC1"
+            android:fontFamily="@font/national_heavy"
+            android:textSize="20sp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input/Output Key"
+            android:hint="Input Key"
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
-            android:id="@+id/etxor3"/>
+            android:id="@+id/etxor3"
+            android:fontFamily="@font/national_regular"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -66,7 +83,8 @@
             android:text="Encrypt dengan XOR"
             android:background="@drawable/backgr"
             android:id="@+id/xor1"
-            android:onClick="xor1"/>
+            android:onClick="xor1"
+            android:fontFamily="@font/national_heavy"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -78,7 +96,8 @@
             android:text="Decrypt dengan XOR"
             android:background="@drawable/backgr"
             android:id="@+id/xor2"
-            android:onClick="xor2"/>
+            android:onClick="xor2"
+            android:fontFamily="@font/national_heavy"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -91,7 +110,8 @@
             android:background="@drawable/backgr"
             android:id="@+id/penjx"
             android:onClick="penjx"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:fontFamily="@font/national_heavy"/>
         <com.air.sdk.injector.AirBanner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,3 +119,4 @@
             android:layout_gravity="center"/>
     </LinearLayout>
 </ScrollView>
+</LinearLayout>
