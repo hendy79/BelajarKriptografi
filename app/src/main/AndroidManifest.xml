@@ -36,7 +36,8 @@
         <activity android:name=".MenuVigenere"></activity>
         <activity android:name=".MenuCaesar" />
         <activity android:name=".BantuanFiturAplikasi" />
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".MenuXORtextPhoto" />
         <activity android:name=".Mengenai"/>
         <activity android:name=".BantuanUtama"/>
